@@ -21,11 +21,6 @@ To facilitate understanding, a [Desmos Simulation](https://www.desmos.com/calcul
 - By calculating the difference between these values, we can remove the ambient light, always present in the returning light signal.
 
 ## Python Script
-The [Desmos Simulation](https://www.desmos.com/calculator/stxdkrn707) calculates the difference between the raw $A$ and $B$ values, which can then be used to compute amplitude, phase shift, and distance. To achieve accurate measurements, the sensor must collect four micro-frames, each with a different phase shift applied either to the emitted light or the switches. The required phase shifts are 0°, 90°, 180°, and 270°.
-
-- In-phase components (0° and 180°)
-- Quadrature components (90° and 270°)
-
-These components are then combined to calculate the amplitude, phase shift, and depth values.
+The [Desmos Simulation](https://www.desmos.com/calculator/stxdkrn707) calculates the difference between the raw $A$ and $B$ values, which can then be used to compute amplitude, phase shift, and distance. To achieve accurate measurements, the sensor must collect four micro-frames, each with a different phase shift applied either to the emitted light or the switches. The required phase shifts are 0°, 90°, 180°, and 270°. In-phase components (0° and 180°) and Quadrature components (90° and 270°) components are then combined to calculate the amplitude, phase shift, and depth values. The example postprocessing script is called `depthsense_postprocessing.py` and it's available in this repository.
 
 ![frame](https://github.com/user-attachments/assets/8356ff53-91f0-4971-bf8c-a1ee2e3acdcc)
